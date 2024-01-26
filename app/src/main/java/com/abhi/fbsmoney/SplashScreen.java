@@ -3,6 +3,7 @@ package com.abhi.fbsmoney;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
@@ -16,17 +17,17 @@ public class SplashScreen extends AppCompatActivity {
 
     TextView textView;
     Animation slideAnim, bottomAnim;
+    SharedPreferences onBoardingScreen;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.splash_screen);
 
-        textView=findViewById(R.id.splash_text);
+        textView = findViewById(R.id.splash_text);
 
-        slideAnim= AnimationUtils.loadAnimation(this, R.anim.slide_anim);
+        slideAnim = AnimationUtils.loadAnimation(this, R.anim.slide_anim);
 
         textView.setAnimation(slideAnim);
 
@@ -34,11 +35,28 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(SplashScreen.this, MainActivity.class);
-                startActivity(intent);
-                finish();
+                onBoardingScreen = getSharedPreferences("onBoardingScreen", MODE_PRIVATE);
+                boolean isFirstTime = onBoardingScreen.getBoolean("firstTime", true);
+
+                if (isFirstTime){
+                    SharedPreferences.Editor editor = onBoardingScreen.edit();
+                    editor.putBoolean("firstTime", false);
+                    editor.apply();
+
+                    Intent intent = new Intent(SplashScreen.this, OnBoarding.class);
+                    startActivity(intent);
+                    finish();
+                } else {
+
+                    Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();
+
+                }
+
+
             }
-        },SPLASH_TIMER);
+        }, SPLASH_TIMER);
 
     }
 
