@@ -22,9 +22,9 @@ public class SliderAdapter extends PagerAdapter {
     }
 
     int images[] = {
-            R.drawable.frame1,
-            R.drawable.frame2,
-            R.drawable.frame3
+            R.drawable.slide1,
+            R.drawable.slide2,
+            R.drawable.slide3
     };
 
     int headings[]= {

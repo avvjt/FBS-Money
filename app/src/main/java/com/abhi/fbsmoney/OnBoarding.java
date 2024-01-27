@@ -14,6 +14,10 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.abhi.fbsmoney.login.Login1;
+import com.abhi.fbsmoney.signup.Signup1;
+import com.abhi.fbsmoney.signup.VerifyPending;
+
 public class OnBoarding extends AppCompatActivity {
 
     ViewPager viewPager;
@@ -38,6 +42,26 @@ public class OnBoarding extends AppCompatActivity {
 
         login = findViewById(R.id.login_button);
         signup = findViewById(R.id.signup_button);
+
+
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                    Intent intent = new Intent(getApplicationContext(), Login1.class);
+                    startActivity(intent);
+            }
+        });
+
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(), Signup1.class);
+                startActivity(intent);
+            }
+        });
 
         sliderAdapter = new SliderAdapter(this);
 

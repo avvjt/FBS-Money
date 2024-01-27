@@ -11,6 +11,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
+import com.abhi.fbsmoney.signup.Signup1;
+
 public class SplashScreen extends AppCompatActivity {
 
     private static int SPLASH_TIMER = 2000;
@@ -48,7 +50,7 @@ public class SplashScreen extends AppCompatActivity {
                     finish();
                 } else {
 
-                    Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                    Intent intent = new Intent(SplashScreen.this, Signup1.class);
                     startActivity(intent);
                     finish();
 

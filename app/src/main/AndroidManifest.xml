@@ -13,6 +13,60 @@
         android:theme="@style/Theme.FBSMoney"
         tools:targetApi="31">
         <activity
+            android:name=".login.CreateScuss"
+            android:exported="false" />
+        <activity
+            android:name=".login.CreatePassword"
+            android:exported="false" />
+        <activity
+            android:name=".login.OtpFailed"
+            android:exported="false" />
+        <activity
+            android:name=".login.Otp"
+            android:exported="false" />
+        <activity
+            android:name=".login.VerifyEmail"
+            android:exported="false" />
+        <activity
+            android:name=".login.Login3"
+            android:exported="false" />
+        <activity
+            android:name=".login.Login2"
+            android:exported="false" />
+        <activity
+            android:name=".login.Login1"
+            android:exported="false" />
+        <activity
+            android:name=".signup.VerifyScuss"
+            android:exported="false" />
+        <activity
+            android:name=".signup.VerifyError"
+            android:exported="false" />
+        <activity
+            android:name=".signup.VerifyPending"
+            android:exported="false" />
+        <activity
+            android:name=".signup.BackPhoto2"
+            android:exported="false" />
+        <activity
+            android:name=".signup.BackPhoto1"
+            android:exported="false" />
+        <activity
+            android:name=".signup.FrontPhoto2"
+            android:exported="false" />
+        <activity
+            android:name=".signup.FrontPhoto1"
+            android:exported="false" />
+        <activity
+            android:name=".signup.Signup3"
+            android:exported="false" />
+        <activity
+            android:name=".signup.Signup2"
+            android:exported="false" />
+        <activity
+            android:name=".signup.Signup1"
+            android:exported="false" />
+        <activity
             android:name=".OnBoarding"
             android:exported="false" />
         <activity
