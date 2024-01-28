@@ -24,7 +24,7 @@
                 android:layout_height="45dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/circle"
-                android:onClick="back10"
+                android:onClick="back11"
                 android:src="@drawable/left_back" />
 
         </LinearLayout>
@@ -78,6 +78,7 @@ utbanali@gmail.com"
         </LinearLayout>
 
 
+
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -86,7 +87,7 @@ utbanali@gmail.com"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="30dp"
             android:background="@drawable/button_background_blue"
-            android:onClick="sendCode1"
+            android:onClick="sendCode2"
             android:text="Send code"
             android:textColor="@color/white" />
 
