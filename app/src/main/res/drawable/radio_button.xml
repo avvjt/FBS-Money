@@ -2,12 +2,12 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:state_checked="true"
-        android:drawable="@drawable/b"
+        android:drawable="@drawable/radio_button_checked"
         >
     </item>
     <item
         android:state_checked="false"
-        android:drawable="@drawable/a"
+        android:drawable="@drawable/radio_button_unchecked"
         >
     </item>
 </selector>

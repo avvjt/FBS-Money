@@ -66,18 +66,20 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginStart="20dp">
-                <RadioButton
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Individual User"
                     android:textSize="14sp"
+                    style="@style/Widget.AppCompat.CompoundButton.CheckBox"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/youtube_sans_dark_medium"
                     android:checked="true"
                     android:clickable="true"
-                    android:buttonTint="@color/blue"
                     android:focusable="true"
-                    android:button="@drawable/radio_button"/>
+                    android:button="@null"
+                    android:drawableStart="@drawable/radio_button"
+                    android:drawablePadding="10dp"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -87,7 +89,9 @@
                     android:textColor="@color/black"
                     android:fontFamily="@font/youtube_sans_dark_medium"
                     android:layout_marginStart="20dp"
-                    android:button="@drawable/radio_button"/>
+                    android:button="@null"
+                    android:drawableStart="@drawable/radio_button"
+                    android:drawablePadding="10dp"/>
             </RadioGroup>
         </LinearLayout>
 
