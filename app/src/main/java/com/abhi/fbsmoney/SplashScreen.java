@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -27,16 +28,10 @@ public class SplashScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-        // edited here
-        getWindow().setStatusBarColor(Color.parseColor("#ffffff"));
-
         setContentView(R.layout.splash_screen);
 
         textView = findViewById(R.id.splash_text);
-
         slideAnim = AnimationUtils.loadAnimation(this, R.anim.slide_anim);
-
         textView.setAnimation(slideAnim);
 
         new Handler().postDelayed(new Runnable() {
