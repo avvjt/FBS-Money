@@ -1,13 +1,6 @@
 package com.abhi.fbsmoney.signup;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.camera.core.CameraSelector;
-import androidx.camera.core.ImageCapture;
-import androidx.camera.core.Preview;
-import androidx.camera.lifecycle.ProcessCameraProvider;
-import androidx.camera.view.PreviewView;
-import androidx.core.content.ContextCompat;
-import androidx.lifecycle.LifecycleOwner;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,10 +8,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.abhi.fbsmoney.R;
-import com.google.common.util.concurrent.ListenableFuture;
-
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Executor;
 
 public class BackPhoto1 extends AppCompatActivity {
     /*private ListenableFuture<ProcessCameraProvider> cameraProvider;
@@ -28,7 +17,7 @@ public class BackPhoto1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_back_photo1);
+        setContentView(R.layout.activity_back_photo);
 
         /*previewView = findViewById(R.id.pre);
 

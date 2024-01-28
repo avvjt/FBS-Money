@@ -10,15 +10,13 @@ import android.widget.Toast;
 import com.abhi.fbsmoney.MainActivity;
 import com.abhi.fbsmoney.OnBoarding;
 import com.abhi.fbsmoney.R;
-import com.abhi.fbsmoney.signup.FrontPhoto1;
-import com.abhi.fbsmoney.signup.Signup2;
 
 public class Login1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login1);
+        setContentView(R.layout.activity_login);
     }
 
     public void back8(View view) {

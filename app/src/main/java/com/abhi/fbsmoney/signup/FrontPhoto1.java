@@ -14,7 +14,7 @@ public class FrontPhoto1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_front_photo1);
+        setContentView(R.layout.activity_front_photo);
     }
 
     public void submit_btn(View view) {
