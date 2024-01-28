@@ -38,4 +38,14 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("androidx.core:core-splashscreen:1.0.1")
     implementation("com.github.mukeshsolanki.android-otpview-pinview:otpview:3.1.0")
+
+
+
+    implementation ("androidx.camera:camera-core:1.3.1")
+    implementation ("androidx.camera:camera-camera2:1.3.1")
+    implementation ("androidx.camera:camera-lifecycle:1.3.1")
+
+// CameraX View class
+    implementation ("androidx.camera:camera-view:1.3.1")
+
 }
