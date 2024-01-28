@@ -3,6 +3,7 @@ package com.abhi.fbsmoney.signup;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -14,6 +15,8 @@ public class FrontPhoto1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setStatusBarColor(Color.parseColor("#FF000000"));
+
         setContentView(R.layout.activity_front_photo);
     }
 

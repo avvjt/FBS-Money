@@ -24,6 +24,10 @@ public class Otp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        // edited here
+        getWindow().setStatusBarColor(Color.parseColor("#ffffff"));
+
         setContentView(R.layout.activity_otp);
     }
 
