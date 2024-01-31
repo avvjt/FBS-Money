@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.abhi.fbsmoney.MainActivity;
+import com.abhi.fbsmoney.Home;
 import com.abhi.fbsmoney.OnBoarding;
 import com.abhi.fbsmoney.R;
 
@@ -32,7 +32,7 @@ public class Login1 extends AppCompatActivity {
 
     public void continuee(View view) {
 
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), Home.class);
         startActivity(intent);
     }
 

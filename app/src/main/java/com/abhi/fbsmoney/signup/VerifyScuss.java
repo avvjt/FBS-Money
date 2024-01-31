@@ -7,7 +7,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
-import com.abhi.fbsmoney.MainActivity;
+import com.abhi.fbsmoney.Home;
 import com.abhi.fbsmoney.R;
 
 public class VerifyScuss extends AppCompatActivity {
@@ -24,7 +24,7 @@ public class VerifyScuss extends AppCompatActivity {
 
     public void startApp(View view) {
 
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), Home.class);
         startActivity(intent);
     }
 

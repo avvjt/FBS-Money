@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="Dashboard" />
+
+        <item
+            android:id="@+id/sendmoney"
+            android:icon="@drawable/sendmoney"
+            android:title="Send Money" />
+
+        <item
+            android:id="@+id/accounts"
+            android:icon="@drawable/wallet"
+            android:title="Accounts &amp; Wallets" />
+
+        <item
+            android:id="@+id/cards"
+            android:icon="@drawable/card"
+            android:title="Cards" />
+
+        <item
+            android:id="@+id/transaction"
+            android:icon="@drawable/transaction"
+            android:title="Transaction History" />
+
+        <item
+            android:id="@+id/beneficent"
+            android:icon="@drawable/dashboard"
+            android:title="Beneficent" />
+
+        <item
+            android:id="@+id/chat"
+            android:icon="@drawable/chat"
+            android:title="Chat with Frank" />
+
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/share"
+            android:title="Share your feedback" />
+
+        <item
+            android:id="@+id/referrals"
+            android:icon="@drawable/share"
+            android:title="Referrals" />
+
+
+    </group>
+
+</menu>

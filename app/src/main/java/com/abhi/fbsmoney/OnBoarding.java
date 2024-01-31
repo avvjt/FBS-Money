@@ -8,7 +8,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -17,7 +16,6 @@ import android.widget.TextView;
 
 import com.abhi.fbsmoney.login.Login1;
 import com.abhi.fbsmoney.signup.Signup1;
-import com.abhi.fbsmoney.signup.VerifyPending;
 
 public class OnBoarding extends AppCompatActivity {
 
@@ -77,7 +75,7 @@ public class OnBoarding extends AppCompatActivity {
     }
 
     public void skip (View view) {
-        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+        startActivity(new Intent(getApplicationContext(), Home.class));
         finish();
 
     }

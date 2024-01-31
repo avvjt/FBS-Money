@@ -4,4 +4,6 @@
     <string name="slide1">Frugal Business: Instant money moves made simple. Send, receive, request – effortlessly</string>
     <string name="slide2">Receive a Mastercard debit card for online and in-person use.</string>
     <string name="slide3">Let\'s get you started in just a few steps.</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

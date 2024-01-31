@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 
-import com.abhi.fbsmoney.MainActivity;
+import com.abhi.fbsmoney.Home;
 import com.abhi.fbsmoney.R;
 
 public class CreatePassword extends AppCompatActivity {
@@ -52,7 +52,7 @@ public class CreatePassword extends AppCompatActivity {
         Continue2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Home.class);
                 startActivity(intent);
             }
         });
