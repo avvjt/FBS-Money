@@ -1,6 +1,7 @@
 package com.abhi.fbsmoney;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
@@ -25,7 +26,7 @@ public class OnBoarding extends AppCompatActivity {
     SliderAdapter sliderAdapter;
     TextView[] dots;
 
-    Button login, signup;
+    AppCompatButton login, signup;
 
     Animation animation;
 
@@ -72,12 +73,6 @@ public class OnBoarding extends AppCompatActivity {
 
         addDots(0);
         viewPager.addOnPageChangeListener(changeListener);
-    }
-
-    public void skip (View view) {
-        startActivity(new Intent(getApplicationContext(), Home.class));
-        finish();
-
     }
 
     public void next (View view) {

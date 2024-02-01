@@ -67,6 +67,7 @@ public class Signup2 extends AppCompatActivity {
 
     public void back (View view) {
 
-        finish();
+        Intent intent = new Intent(getApplicationContext(), Signup1.class);
+        startActivity(intent);
     }
 }

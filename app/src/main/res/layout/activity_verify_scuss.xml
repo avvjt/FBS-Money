@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,75 +7,83 @@
     tools:context=".signup.VerifyScuss"
     android:background="@color/white">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/white">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="30dp">
-            <ImageButton
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:src="@drawable/left_back"
-                android:background="@drawable/circle"
-                android:layout_margin="20dp"
-                android:onClick="back6"/>
-
-        </LinearLayout>
+        android:layout_height="match_parent"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="28sp"
-                android:textAlignment="textStart"
-                android:text="Verified Successfully"
-                android:textColor="@color/black"
-                android:fontFamily="@font/youtube_sans_dark_semibold"
-                android:layout_marginStart="20dp"/>
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/left_back"
+                    android:background="@drawable/circle"
+                    android:layout_margin="20dp"
+                    android:onClick="back6"/>
 
-            <TextView
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="Congratulations! Your identity has been successfully verified."
-                android:textColor="@color/black"
-                android:textAlignment="textStart"
-                android:fontFamily="@font/youtube_sans_dark_medium"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"/>
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:textAlignment="textStart"
+                    android:text="@string/verified_successfully"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/congratulations_your_identity_has_been_successfully_verified"
+                    android:textColor="@color/black"
+                    android:textAlignment="textStart"
+                    android:fontFamily="@font/inter_medium"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scuss"
+                android:layout_marginTop="30dp"/>
 
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/scuss"
-            android:layout_marginTop="30dp"/>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Start Using App"
-            android:background="@drawable/button_background_blue"
-            android:textColor="@color/white"
-            android:layout_marginTop="200dp"
-            android:layout_marginBottom="30dp"
-            android:onClick="startApp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"/>
+    </ScrollView>
 
-    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_using_app"
+        android:background="@drawable/button_background_blue"
+        android:textColor="@color/white"
+        android:layout_marginBottom="40dp"
+        android:onClick="startApp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 
-</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

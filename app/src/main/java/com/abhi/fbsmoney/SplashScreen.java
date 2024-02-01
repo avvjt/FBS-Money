@@ -21,7 +21,7 @@ public class SplashScreen extends AppCompatActivity {
     private static int SPLASH_TIMER = 2000;
 
     TextView textView;
-    Animation slideAnim, bottomAnim;
+    Animation slideAnim;
     SharedPreferences onBoardingScreen;
 
 
@@ -51,7 +51,7 @@ public class SplashScreen extends AppCompatActivity {
                     finish();
                 } else {
 
-                    Intent intent = new Intent(SplashScreen.this, Signup1.class);
+                    Intent intent = new Intent(SplashScreen.this, Home.class);
                     startActivity(intent);
                     finish();
 

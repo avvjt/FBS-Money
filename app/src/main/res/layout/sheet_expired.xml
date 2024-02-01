@@ -22,10 +22,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Code has expired"
+        android:text="@string/code_has_expired"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:fontFamily="@font/youtube_sans_dark_semibold"
+        android:fontFamily="@font/inter_bold"
         android:textSize="24sp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
@@ -34,10 +34,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Would you like to send another code?"
+        android:text="@string/would_you_like_to_send_another_code"
         android:textColor="@color/dark_gray"
-        android:fontFamily="@font/youtube_sans_dark_semibold"
-        android:textSize="20sp"
+        android:fontFamily="@font/inter_regular"
+        android:textSize="18sp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"/>
@@ -45,7 +45,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Resend Code"
+        android:text="@string/resend_code"
         android:background="@drawable/button_background_blue"
         android:textColor="@color/white"
         android:layout_marginTop="30dp"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,74 +7,81 @@
     tools:context=".signup.VerifyPending"
     android:background="@color/white">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/white">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="30dp">
-            <ImageButton
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:src="@drawable/left_back"
-                android:background="@drawable/circle"
-                android:layout_margin="20dp"
-                android:onClick="back4"/>
-
-        </LinearLayout>
+        android:layout_height="match_parent"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="28sp"
-                android:textAlignment="textStart"
-                android:text="Verification Pending"
-                android:textColor="@color/black"
-                android:fontFamily="@font/youtube_sans_dark_semibold"
-                android:layout_marginStart="20dp"/>
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/left_back"
+                    android:background="@drawable/circle"
+                    android:layout_margin="20dp"
+                    android:onClick="back4"/>
 
-            <TextView
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="Your identity verification is in progress. This may take a short while."
-                android:textColor="@color/black"
-                android:textAlignment="textStart"
-                android:fontFamily="@font/youtube_sans_dark_medium"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"/>
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:textAlignment="textStart"
+                    android:text="@string/verification_pending"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/your_identity_verification_is_in_progress_this_may_take_a_short_while"
+                    android:textColor="@color/black"
+                    android:textAlignment="textStart"
+                    android:fontFamily="@font/inter_medium"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pending"
+                android:layout_marginTop="30dp"/>
 
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/pending"
-            android:layout_marginTop="30dp"/>
+
+    </ScrollView>
 
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="30dp"
-            android:layout_marginTop="200dp"
-            android:id="@+id/next"
-            android:background="#00000000"
-            android:drawableEnd="@drawable/right_arrow"
-            android:onClick="next1"/>
-
-    </LinearLayout>
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/right_arrow"
+        android:background="@drawable/circle"
+        android:layout_margin="20dp"
+        android:onClick="next1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 
-</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

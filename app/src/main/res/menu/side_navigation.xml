@@ -30,7 +30,7 @@
 
         <item
             android:id="@+id/beneficent"
-            android:icon="@drawable/dashboard"
+            android:icon="@drawable/beneficent"
             android:title="Beneficent" />
 
         <item
@@ -40,7 +40,7 @@
 
         <item
             android:id="@+id/share"
-            android:icon="@drawable/share"
+            android:icon="@drawable/edit"
             android:title="Share your feedback" />
 
         <item
