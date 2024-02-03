@@ -64,4 +64,16 @@
     <string name="contains_a_symbol_or_a_number">Contains a symbol or a number</string>
     <string name="congratulations">Congratulations</string>
     <string name="your_account_has_successfully_been_created_please_wait_24_hours_while_we_verify_your_account">Your account has successfully been created. Please wait 24 hours while we verify your account.</string>
+
+
+    <string-array name="noting">
+        <item>EUR</item>
+        <item>Example</item>
+    </string-array>
+
+    <string-array name="noting2">
+        <item>Select</item>
+        <item>Example</item>
+    </string-array>
+
 </resources>

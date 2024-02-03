@@ -87,7 +87,7 @@
             android:exported="false" />
         <activity
             android:name=".Home"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".SplashScreen"
             android:exported="true"

@@ -3,6 +3,9 @@
     <style name="Base.Theme.FBSMoney" parent="Theme.Material3.DayNight.NoActionBar">
         <!--<item name="colorPrimaryDark" >@color/white</item>-->
         <!-- Customize your light theme here. -->
+        <item name="colorControlNormal">@android:color/white</item>
+
+
     </style>
 
     <style name="Theme.FBSMoney" parent="Base.Theme.FBSMoney" />
@@ -16,5 +19,8 @@
         <item name="android:windowTranslucentStatus">true</item>
     </style>
 
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/spinner_bg</item>
+    </style>
 
 </resources>
