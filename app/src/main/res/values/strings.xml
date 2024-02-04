@@ -76,4 +76,10 @@
         <item>Example</item>
     </string-array>
 
+    <string-array name="noting3">
+        <item>USD</item>
+        <item>INR</item>
+        <item>Example</item>
+    </string-array>
+
 </resources>

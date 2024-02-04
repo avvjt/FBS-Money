@@ -87,11 +87,10 @@
             android:exported="false" />
         <activity
             android:name=".Home"
-            android:exported="false"/>
+            android:exported="true"/>
         <activity
             android:name=".SplashScreen"
-            android:exported="true"
-            android:theme="@style/Theme.FBSMoney.NoActionBarStatusBar">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

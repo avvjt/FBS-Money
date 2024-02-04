@@ -10,8 +10,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
@@ -19,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.abhi.fbsmoney.SendMoney.AddBeneficiary;
+import com.abhi.fbsmoney.SendMoney.EnterAmount;
 import com.google.android.material.navigation.NavigationView;
 
 public class Home extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -30,10 +33,10 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-        // edited here
-        getWindow().setStatusBarColor(Color.parseColor("#ffffff"));
-
+        getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        );
         setContentView(R.layout.activity_home);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -111,11 +114,25 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
             Intent intent = new Intent(getApplicationContext(), Home.class);
             startActivity(intent);
         } else if (itemId == R.id.sendmoney) {
-            Intent intent1 = new Intent(getApplicationContext(), AddBeneficiary.class);
+            Intent intent1 = new Intent(getApplicationContext(), EnterAmount.class);
             startActivity(intent1);
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void sendmoney_page(View view) {
+        Intent intent = new Intent(getApplicationContext(), EnterAmount.class);
+        startActivity(intent);
+    }
+
+    public void wallet_page(View view) {
+    }
+
+    public void translations_page(View view) {
+    }
+
+    public void toolbar_image_profile(View view) {
     }
 }
