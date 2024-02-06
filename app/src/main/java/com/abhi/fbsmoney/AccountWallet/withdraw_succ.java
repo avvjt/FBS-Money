@@ -1,4 +1,4 @@
-package com.abhi.fbsmoney.SendMoney;
+package com.abhi.fbsmoney.AccountWallet;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,7 @@ import android.widget.Toast;
 import com.abhi.fbsmoney.Notification;
 import com.abhi.fbsmoney.R;
 
-public class Success extends AppCompatActivity {
+public class withdraw_succ extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,27 +19,29 @@ public class Success extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         // edited here
         getWindow().setStatusBarColor(Color.parseColor("#ffffff"));
-        setContentView(R.layout.activity_success);
+        setContentView(R.layout.activity_withdraw_succ);
     }
 
-    public void noti_image(View view) {
+    public void back18(View view) {
+        Intent intent = new Intent(getApplicationContext(), BankAccount.class);
+        startActivity(intent);
+    }
+
+    public void note(View view) {
         Intent intent = new Intent(getApplicationContext(), Notification.class);
         startActivity(intent);
     }
 
-    public void back14(View view) {
-        Intent intent = new Intent(getApplicationContext(), MoneyDetails.class);
-        startActivity(intent);
+    public void profilimage(View view) {
     }
 
-    public void profile_image(View view) {
-    }
-
-    public void share_btn1(View view) {
+    public void sharn1(View view) {
         Toast.makeText(this, "Share button is working...", Toast.LENGTH_SHORT).show();
+
     }
 
-    public void okey_btn1(View view) {
+    public void oken1(View view) {
         Toast.makeText(this, "Ok button is working...", Toast.LENGTH_SHORT).show();
+
     }
 }

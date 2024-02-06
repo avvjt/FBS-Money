@@ -20,7 +20,7 @@
 
         <item
             android:id="@+id/cards"
-            android:icon="@drawable/card"
+            android:icon="@drawable/cards"
             android:title="Cards" />
 
         <item

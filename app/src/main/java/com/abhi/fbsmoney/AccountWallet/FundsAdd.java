@@ -1,4 +1,4 @@
-package com.abhi.fbsmoney.SendMoney;
+package com.abhi.fbsmoney.AccountWallet;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,7 +10,7 @@ import android.view.View;
 import com.abhi.fbsmoney.Notification;
 import com.abhi.fbsmoney.R;
 
-public class MoneyDetails extends AppCompatActivity {
+public class FundsAdd extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,25 +18,24 @@ public class MoneyDetails extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         // edited here
         getWindow().setStatusBarColor(Color.parseColor("#ffffff"));
-        setContentView(R.layout.activity_money_details);
+        setContentView(R.layout.activity_funds_add);
     }
 
-    public void send_btn(View view) {
-
-        Intent intent = new Intent(getApplicationContext(), Success.class);
+    public void okey_pay(View view) {
+        Intent intent = new Intent(getApplicationContext(), FundsTransfar.class);
         startActivity(intent);
     }
 
-    public void back15(View view) {
-        Intent intent = new Intent(getApplicationContext(), AddBeneficiary.class);
+    public void back21(View view) {
+        Intent intent = new Intent(getApplicationContext(), Wallet.class);
         startActivity(intent);
     }
 
-    public void noti_imagtton(View view) {
+    public void noti_g1e(View view) {
         Intent intent = new Intent(getApplicationContext(), Notification.class);
         startActivity(intent);
     }
 
-    public void profilebutton(View view) {
+    public void profle1_ige(View view) {
     }
 }

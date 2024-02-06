@@ -1,4 +1,4 @@
-package com.abhi.fbsmoney.SendMoney;
+package com.abhi.fbsmoney;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -12,35 +12,25 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.abhi.fbsmoney.AccountWallet.Wallet;
 import com.abhi.fbsmoney.Beneficent.Beneficent;
-import com.abhi.fbsmoney.Card;
-import com.abhi.fbsmoney.Filtter;
-import com.abhi.fbsmoney.Home;
-import com.abhi.fbsmoney.Notification;
-import com.abhi.fbsmoney.R;
-import com.abhi.fbsmoney.Referral;
+import com.abhi.fbsmoney.SendMoney.EnterAmount;
 import com.abhi.fbsmoney.Transaction.Transaction;
-import com.abhi.fbsmoney.signup.Signup1;
 import com.google.android.material.navigation.NavigationView;
 
-public class EnterAmount extends AppCompatActivity {
+public class Notification extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
     NavigationView navigationView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         // edited here
         getWindow().setStatusBarColor(Color.parseColor("#ffffff"));
-        setContentView(R.layout.activity_enter_amount);
+        setContentView(R.layout.activity_notification);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
 
@@ -93,30 +83,6 @@ public class EnterAmount extends AppCompatActivity {
             }
         });
 
-        navigationView.setCheckedItem(R.id.sendmoney);
-
-
-
-
-        //get the first spinner from the xml.
-        Spinner spinner = findViewById(R.id.spinner1);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.noting3,android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String text = parent.getItemAtPosition(position).toString();
-                Toast.makeText(parent.getContext(),text+" is selected", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
-
     }
 
     public void onBackPressed() {
@@ -128,17 +94,11 @@ public class EnterAmount extends AppCompatActivity {
 
     }
 
-    public void contine_btn (View view) {
 
-        Intent intent = new Intent(getApplicationContext(), AddBeneficiary.class);
-        startActivity(intent);
+    public void noton(View view) {
+        Toast.makeText(this, "Design mistake", Toast.LENGTH_SHORT).show();
     }
 
-    public void noti_imagebutton(View view) {
-        Intent intent = new Intent(getApplicationContext(), Notification.class);
-        startActivity(intent);
-    }
-
-    public void profile_imagebutton(View view) {
+    public void prtton(View view) {
     }
 }

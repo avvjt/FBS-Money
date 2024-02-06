@@ -20,8 +20,11 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.abhi.fbsmoney.AccountWallet.Wallet;
+import com.abhi.fbsmoney.Beneficent.Beneficent;
 import com.abhi.fbsmoney.SendMoney.AddBeneficiary;
 import com.abhi.fbsmoney.SendMoney.EnterAmount;
+import com.abhi.fbsmoney.Transaction.Transaction;
 import com.google.android.material.navigation.NavigationView;
 
 public class Home extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -116,6 +119,24 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         } else if (itemId == R.id.sendmoney) {
             Intent intent1 = new Intent(getApplicationContext(), EnterAmount.class);
             startActivity(intent1);
+        } else if (itemId == R.id.accounts) {
+            Intent intent1 = new Intent(getApplicationContext(), Wallet.class);
+            startActivity(intent1);
+        }else if (itemId == R.id.cards) {
+            Intent intent1 = new Intent(getApplicationContext(), Card.class);
+            startActivity(intent1);
+        }else if (itemId == R.id.referrals) {
+            Intent intent1 = new Intent(getApplicationContext(), Referral.class);
+            startActivity(intent1);
+        }else if (itemId == R.id.beneficent) {
+            Intent intent1 = new Intent(getApplicationContext(), Beneficent.class);
+            startActivity(intent1);
+        }else if (itemId == R.id.transaction) {
+            Intent intent1 = new Intent(getApplicationContext(), Transaction.class);
+            startActivity(intent1);
+        }else if (itemId == R.id.chat) {
+            Intent intent1 = new Intent(getApplicationContext(), Filtter.class);
+            startActivity(intent1);
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);
@@ -128,6 +149,8 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
     }
 
     public void wallet_page(View view) {
+        Intent intent = new Intent(getApplicationContext(), Wallet.class);
+        startActivity(intent);
     }
 
     public void translations_page(View view) {

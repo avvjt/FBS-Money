@@ -17,6 +17,57 @@
         android:theme="@style/Theme.FBSMoney"
         tools:targetApi="31">
         <activity
+            android:name=".ChatWith"
+            android:exported="false" />
+        <activity
+            android:name=".AccountWallet.FundsTransfar"
+            android:exported="false" />
+        <activity
+            android:name=".AccountWallet.FundsAdd"
+            android:exported="false" />
+        <activity
+            android:name=".Filtter"
+            android:exported="false" />
+        <activity
+            android:name=".Transaction.Transaction"
+            android:exported="false" />
+        <activity
+            android:name=".Beneficent.Beneficent"
+            android:exported="false" />
+        <activity
+            android:name=".Referral"
+            android:exported="false" />
+        <activity
+            android:name=".Card"
+            android:exported="false" />
+        <activity
+            android:name=".Notification"
+            android:exported="false" />
+        <activity
+            android:name=".AccountWallet.Balance"
+            android:exported="false" />
+        <activity
+            android:name=".AccountWallet.withdraw_succ"
+            android:exported="false" />
+        <activity
+            android:name=".AccountWallet.BankAccount"
+            android:exported="false" />
+        <activity
+            android:name=".AccountWallet.AddBank"
+            android:exported="false" />
+        <activity
+            android:name=".AccountWallet.WalletDetail_succ"
+            android:exported="false" />
+        <activity
+            android:name=".AccountWallet.WalletDetail"
+            android:exported="false" />
+        <activity
+            android:name=".AccountWallet.withdraw"
+            android:exported="false" />
+        <activity
+            android:name=".AccountWallet.Wallet"
+            android:exported="false" />
+        <activity
             android:name=".SendMoney.Success"
             android:exported="false" />
         <activity
@@ -87,7 +138,7 @@
             android:exported="false" />
         <activity
             android:name=".Home"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">

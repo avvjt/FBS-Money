@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
+import com.abhi.fbsmoney.Notification;
 import com.abhi.fbsmoney.R;
 
 public class AddBeneficiary extends AppCompatActivity {
@@ -32,6 +33,8 @@ public class AddBeneficiary extends AppCompatActivity {
     }
 
     public void noti_imagebuttonn(View view) {
+        Intent intent = new Intent(getApplicationContext(), Notification.class);
+        startActivity(intent);
     }
 
     public void profile_imagebuttonn(View view) {
